@@ -24,3 +24,25 @@ npm i assign-obj-params --save
 
 * [nl-bxth](https://github.com/nolim1t/nl-bxth)
 
+## Examples
+
+### Case - Designing an API interface to an API
+
+I know all the API interface parameters, however I'd like to hide it away a bit more neatly in the library itself
+
+```javascript
+var requestinfo = {}; // This comes from the function or method
+
+const assignFormParamsIfExist = require('assign-obj-params');
+var formParams = {
+    apikey: "apikey"
+};
+
+assignFormParamsIfExist(formParams, requestinfo, 'order_id');
+assignFormParamsIfExist(formParams, requestinfo, 'pairing');
+
+// After this formParams is built which can be used in the request.js library to send as an API request
+
+```
+
+
