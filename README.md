@@ -23,6 +23,7 @@ npm i assign-obj-params --save
 ## Where its used (Open Source)
 
 * [nl-bxth](https://github.com/nolim1t/nl-bxth)
+* [nl-bitmex](https://github.com/nolim1t/nl-bitmex)
 
 ## Examples
 
